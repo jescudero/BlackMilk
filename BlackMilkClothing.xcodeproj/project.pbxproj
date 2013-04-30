@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D40826E17272C1700127D10 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D40826D17272C1700127D10 /* UIKit.framework */; };
+		4D40827017272C1700127D10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D40826F17272C1700127D10 /* Foundation.framework */; };
+		4D40827217272C1700127D10 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D40827117272C1700127D10 /* CoreGraphics.framework */; };
+		4D40827817272C1700127D10 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D40827617272C1700127D10 /* InfoPlist.strings */; };
+		4D40827A17272C1700127D10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D40827917272C1700127D10 /* main.m */; };
+		4D40827E17272C1700127D10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D40827D17272C1700127D10 /* AppDelegate.m */; };
+		4D40828017272C1700127D10 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D40827F17272C1700127D10 /* Default.png */; };
+		4D40828217272C1700127D10 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D40828117272C1700127D10 /* Default@2x.png */; };
+		4D40828417272C1700127D10 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D40828317272C1700127D10 /* Default-568h@2x.png */; };
+		4D40828C17272C1700127D10 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D40828B17272C1700127D10 /* SenTestingKit.framework */; };
+		4D40828D17272C1700127D10 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D40826D17272C1700127D10 /* UIKit.framework */; };
+		4D40828E17272C1700127D10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D40826F17272C1700127D10 /* Foundation.framework */; };
+		4D40829617272C1700127D10 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D40829417272C1700127D10 /* InfoPlist.strings */; };
+		4D40829917272C1700127D10 /* BlackMilkClothingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D40829817272C1700127D10 /* BlackMilkClothingTests.m */; };
+		4D4082B617272F4600127D10 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4082B517272F4600127D10 /* libxml2.dylib */; };
+		4D41A302172AFF9600AD4EAA /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D41A300172AFF9500AD4EAA /* ProductDetailViewController.m */; };
+		4D41A303172AFF9600AD4EAA /* ProductDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D41A301172AFF9600AD4EAA /* ProductDetailViewController.xib */; };
+		4DCD5F53172983960017E6D9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCD5F52172983960017E6D9 /* QuartzCore.framework */; };
+		4DCD5F64172984FF0017E6D9 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD5F57172984FF0017E6D9 /* TFHpple.m */; };
+		4DCD5F65172984FF0017E6D9 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD5F59172984FF0017E6D9 /* TFHppleElement.m */; };
+		4DCD5F66172984FF0017E6D9 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD5F5B172984FF0017E6D9 /* XPathQuery.m */; };
+		4DCD5F67172984FF0017E6D9 /* JASidePanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD5F5E172984FF0017E6D9 /* JASidePanelController.m */; };
+		4DCD5F68172984FF0017E6D9 /* UIViewController+JASidePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD5F60172984FF0017E6D9 /* UIViewController+JASidePanel.m */; };
+		4DCD5F69172984FF0017E6D9 /* Section.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD5F63172984FF0017E6D9 /* Section.m */; };
+		4DCD5F6F1729896D0017E6D9 /* MainScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD5F6D1729896D0017E6D9 /* MainScreenViewController.m */; };
+		4DCD5F701729896D0017E6D9 /* MainScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DCD5F6E1729896D0017E6D9 /* MainScreenViewController.xib */; };
+		4DCD5F741729A22D0017E6D9 /* CategoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD5F721729A22D0017E6D9 /* CategoryListViewController.m */; };
+		4DCD5F751729A22D0017E6D9 /* CategoryListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DCD5F731729A22D0017E6D9 /* CategoryListViewController.xib */; };
+		4DCD5F791729BB710017E6D9 /* ProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD5F771729BB710017E6D9 /* ProductListViewController.m */; };
+		4DCD5F7A1729BB710017E6D9 /* ProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DCD5F781729BB710017E6D9 /* ProductListViewController.xib */; };
+		4DCD5F7D1729BC470017E6D9 /* SectionListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD5F7C1729BC470017E6D9 /* SectionListCell.m */; };
+		4DCD5F7F1729BC750017E6D9 /* SectionListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DCD5F7E1729BC740017E6D9 /* SectionListCell.xib */; };
+		4DCD5F821729C2280017E6D9 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD5F811729C2280017E6D9 /* Product.m */; };
+		4DCD5F851729C9D90017E6D9 /* ProductListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD5F841729C9D80017E6D9 /* ProductListCell.m */; };
+		4DCD5F881729C9F00017E6D9 /* ProductListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DCD5F871729C9F00017E6D9 /* ProductListCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D40828F17272C1700127D10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D40826217272C1600127D10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D40826917272C1700127D10;
+			remoteInfo = BlackMilkClothing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4D40826A17272C1700127D10 /* BlackMilkClothing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackMilkClothing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D40826D17272C1700127D10 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4D40826F17272C1700127D10 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4D40827117272C1700127D10 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4D40827517272C1700127D10 /* BlackMilkClothing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlackMilkClothing-Info.plist"; sourceTree = "<group>"; };
+		4D40827717272C1700127D10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4D40827917272C1700127D10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4D40827B17272C1700127D10 /* BlackMilkClothing-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlackMilkClothing-Prefix.pch"; sourceTree = "<group>"; };
+		4D40827C17272C1700127D10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4D40827D17272C1700127D10 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4D40827F17272C1700127D10 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4D40828117272C1700127D10 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4D40828317272C1700127D10 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4D40828A17272C1700127D10 /* BlackMilkClothingTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackMilkClothingTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D40828B17272C1700127D10 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		4D40829317272C1700127D10 /* BlackMilkClothingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlackMilkClothingTests-Info.plist"; sourceTree = "<group>"; };
+		4D40829517272C1700127D10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4D40829717272C1700127D10 /* BlackMilkClothingTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlackMilkClothingTests.h; sourceTree = "<group>"; };
+		4D40829817272C1700127D10 /* BlackMilkClothingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlackMilkClothingTests.m; sourceTree = "<group>"; };
+		4D4082B517272F4600127D10 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		4D41A2FF172AFF9500AD4EAA /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
+		4D41A300172AFF9500AD4EAA /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
+		4D41A301172AFF9600AD4EAA /* ProductDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductDetailViewController.xib; sourceTree = "<group>"; };
+		4DCD5F52172983960017E6D9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4DCD5F56172984FF0017E6D9 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		4DCD5F57172984FF0017E6D9 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		4DCD5F58172984FF0017E6D9 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		4DCD5F59172984FF0017E6D9 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		4DCD5F5A172984FF0017E6D9 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		4DCD5F5B172984FF0017E6D9 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		4DCD5F5D172984FF0017E6D9 /* JASidePanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JASidePanelController.h; sourceTree = "<group>"; };
+		4DCD5F5E172984FF0017E6D9 /* JASidePanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JASidePanelController.m; sourceTree = "<group>"; };
+		4DCD5F5F172984FF0017E6D9 /* UIViewController+JASidePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JASidePanel.h"; sourceTree = "<group>"; };
+		4DCD5F60172984FF0017E6D9 /* UIViewController+JASidePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JASidePanel.m"; sourceTree = "<group>"; };
+		4DCD5F62172984FF0017E6D9 /* Section.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Section.h; sourceTree = "<group>"; };
+		4DCD5F63172984FF0017E6D9 /* Section.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Section.m; sourceTree = "<group>"; };
+		4DCD5F6C1729896D0017E6D9 /* MainScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScreenViewController.h; sourceTree = "<group>"; };
+		4DCD5F6D1729896D0017E6D9 /* MainScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainScreenViewController.m; sourceTree = "<group>"; };
+		4DCD5F6E1729896D0017E6D9 /* MainScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainScreenViewController.xib; sourceTree = "<group>"; };
+		4DCD5F711729A22D0017E6D9 /* CategoryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryListViewController.h; sourceTree = "<group>"; };
+		4DCD5F721729A22D0017E6D9 /* CategoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryListViewController.m; sourceTree = "<group>"; };
+		4DCD5F731729A22D0017E6D9 /* CategoryListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryListViewController.xib; sourceTree = "<group>"; };
+		4DCD5F761729BB700017E6D9 /* ProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductListViewController.h; path = ../ProductListViewController.h; sourceTree = "<group>"; };
+		4DCD5F771729BB710017E6D9 /* ProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductListViewController.m; path = ../ProductListViewController.m; sourceTree = "<group>"; };
+		4DCD5F781729BB710017E6D9 /* ProductListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProductListViewController.xib; path = ../ProductListViewController.xib; sourceTree = "<group>"; };
+		4DCD5F7B1729BC470017E6D9 /* SectionListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionListCell.h; sourceTree = "<group>"; };
+		4DCD5F7C1729BC470017E6D9 /* SectionListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionListCell.m; sourceTree = "<group>"; };
+		4DCD5F7E1729BC740017E6D9 /* SectionListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SectionListCell.xib; path = ../SectionListCell.xib; sourceTree = "<group>"; };
+		4DCD5F801729C2280017E6D9 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		4DCD5F811729C2280017E6D9 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		4DCD5F831729C9D80017E6D9 /* ProductListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListCell.h; sourceTree = "<group>"; };
+		4DCD5F841729C9D80017E6D9 /* ProductListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListCell.m; sourceTree = "<group>"; };
+		4DCD5F871729C9F00017E6D9 /* ProductListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProductListCell.xib; path = ../ProductListCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D40826717272C1700127D10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DCD5F53172983960017E6D9 /* QuartzCore.framework in Frameworks */,
+				4D4082B617272F4600127D10 /* libxml2.dylib in Frameworks */,
+				4D40826E17272C1700127D10 /* UIKit.framework in Frameworks */,
+				4D40827017272C1700127D10 /* Foundation.framework in Frameworks */,
+				4D40827217272C1700127D10 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D40828617272C1700127D10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D40828C17272C1700127D10 /* SenTestingKit.framework in Frameworks */,
+				4D40828D17272C1700127D10 /* UIKit.framework in Frameworks */,
+				4D40828E17272C1700127D10 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D40826117272C1600127D10 = {
+			isa = PBXGroup;
+			children = (
+				4DCD5F52172983960017E6D9 /* QuartzCore.framework */,
+				4D40827317272C1700127D10 /* BlackMilkClothing */,
+				4D40829117272C1700127D10 /* BlackMilkClothingTests */,
+				4D40826C17272C1700127D10 /* Frameworks */,
+				4D40826B17272C1700127D10 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4D40826B17272C1700127D10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D40826A17272C1700127D10 /* BlackMilkClothing.app */,
+				4D40828A17272C1700127D10 /* BlackMilkClothingTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D40826C17272C1700127D10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D4082B517272F4600127D10 /* libxml2.dylib */,
+				4D40826D17272C1700127D10 /* UIKit.framework */,
+				4D40826F17272C1700127D10 /* Foundation.framework */,
+				4D40827117272C1700127D10 /* CoreGraphics.framework */,
+				4D40828B17272C1700127D10 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D40827317272C1700127D10 /* BlackMilkClothing */ = {
+			isa = PBXGroup;
+			children = (
+				4DCD5F54172984FF0017E6D9 /* Libraries */,
+				4DCD5F61172984FF0017E6D9 /* Model */,
+				4D40827C17272C1700127D10 /* AppDelegate.h */,
+				4D40827D17272C1700127D10 /* AppDelegate.m */,
+				4DCD5F6C1729896D0017E6D9 /* MainScreenViewController.h */,
+				4DCD5F6D1729896D0017E6D9 /* MainScreenViewController.m */,
+				4DCD5F6E1729896D0017E6D9 /* MainScreenViewController.xib */,
+				4DCD5F711729A22D0017E6D9 /* CategoryListViewController.h */,
+				4DCD5F721729A22D0017E6D9 /* CategoryListViewController.m */,
+				4DCD5F731729A22D0017E6D9 /* CategoryListViewController.xib */,
+				4DCD5F761729BB700017E6D9 /* ProductListViewController.h */,
+				4DCD5F771729BB710017E6D9 /* ProductListViewController.m */,
+				4DCD5F781729BB710017E6D9 /* ProductListViewController.xib */,
+				4DCD5F7B1729BC470017E6D9 /* SectionListCell.h */,
+				4DCD5F7C1729BC470017E6D9 /* SectionListCell.m */,
+				4DCD5F7E1729BC740017E6D9 /* SectionListCell.xib */,
+				4DCD5F831729C9D80017E6D9 /* ProductListCell.h */,
+				4DCD5F841729C9D80017E6D9 /* ProductListCell.m */,
+				4DCD5F871729C9F00017E6D9 /* ProductListCell.xib */,
+				4D41A2FF172AFF9500AD4EAA /* ProductDetailViewController.h */,
+				4D41A300172AFF9500AD4EAA /* ProductDetailViewController.m */,
+				4D41A301172AFF9600AD4EAA /* ProductDetailViewController.xib */,
+				4D40827417272C1700127D10 /* Supporting Files */,
+			);
+			path = BlackMilkClothing;
+			sourceTree = "<group>";
+		};
+		4D40827417272C1700127D10 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D40827517272C1700127D10 /* BlackMilkClothing-Info.plist */,
+				4D40827617272C1700127D10 /* InfoPlist.strings */,
+				4D40827917272C1700127D10 /* main.m */,
+				4D40827B17272C1700127D10 /* BlackMilkClothing-Prefix.pch */,
+				4D40827F17272C1700127D10 /* Default.png */,
+				4D40828117272C1700127D10 /* Default@2x.png */,
+				4D40828317272C1700127D10 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D40829117272C1700127D10 /* BlackMilkClothingTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D40829717272C1700127D10 /* BlackMilkClothingTests.h */,
+				4D40829817272C1700127D10 /* BlackMilkClothingTests.m */,
+				4D40829217272C1700127D10 /* Supporting Files */,
+			);
+			path = BlackMilkClothingTests;
+			sourceTree = "<group>";
+		};
+		4D40829217272C1700127D10 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D40829317272C1700127D10 /* BlackMilkClothingTests-Info.plist */,
+				4D40829417272C1700127D10 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4DCD5F54172984FF0017E6D9 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				4DCD5F55172984FF0017E6D9 /* hpple */,
+				4DCD5F5C172984FF0017E6D9 /* JASidePanel */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		4DCD5F55172984FF0017E6D9 /* hpple */ = {
+			isa = PBXGroup;
+			children = (
+				4DCD5F56172984FF0017E6D9 /* TFHpple.h */,
+				4DCD5F57172984FF0017E6D9 /* TFHpple.m */,
+				4DCD5F58172984FF0017E6D9 /* TFHppleElement.h */,
+				4DCD5F59172984FF0017E6D9 /* TFHppleElement.m */,
+				4DCD5F5A172984FF0017E6D9 /* XPathQuery.h */,
+				4DCD5F5B172984FF0017E6D9 /* XPathQuery.m */,
+			);
+			path = hpple;
+			sourceTree = "<group>";
+		};
+		4DCD5F5C172984FF0017E6D9 /* JASidePanel */ = {
+			isa = PBXGroup;
+			children = (
+				4DCD5F5D172984FF0017E6D9 /* JASidePanelController.h */,
+				4DCD5F5E172984FF0017E6D9 /* JASidePanelController.m */,
+				4DCD5F5F172984FF0017E6D9 /* UIViewController+JASidePanel.h */,
+				4DCD5F60172984FF0017E6D9 /* UIViewController+JASidePanel.m */,
+			);
+			path = JASidePanel;
+			sourceTree = "<group>";
+		};
+		4DCD5F61172984FF0017E6D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4DCD5F62172984FF0017E6D9 /* Section.h */,
+				4DCD5F63172984FF0017E6D9 /* Section.m */,
+				4DCD5F801729C2280017E6D9 /* Product.h */,
+				4DCD5F811729C2280017E6D9 /* Product.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D40826917272C1700127D10 /* BlackMilkClothing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D40829C17272C1700127D10 /* Build configuration list for PBXNativeTarget "BlackMilkClothing" */;
+			buildPhases = (
+				4D40826617272C1700127D10 /* Sources */,
+				4D40826717272C1700127D10 /* Frameworks */,
+				4D40826817272C1700127D10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlackMilkClothing;
+			productName = BlackMilkClothing;
+			productReference = 4D40826A17272C1700127D10 /* BlackMilkClothing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D40828917272C1700127D10 /* BlackMilkClothingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D40829F17272C1700127D10 /* Build configuration list for PBXNativeTarget "BlackMilkClothingTests" */;
+			buildPhases = (
+				4D40828517272C1700127D10 /* Sources */,
+				4D40828617272C1700127D10 /* Frameworks */,
+				4D40828717272C1700127D10 /* Resources */,
+				4D40828817272C1700127D10 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D40829017272C1700127D10 /* PBXTargetDependency */,
+			);
+			name = BlackMilkClothingTests;
+			productName = BlackMilkClothingTests;
+			productReference = 4D40828A17272C1700127D10 /* BlackMilkClothingTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D40826217272C1600127D10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Juan Escudero";
+			};
+			buildConfigurationList = 4D40826517272C1600127D10 /* Build configuration list for PBXProject "BlackMilkClothing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4D40826117272C1600127D10;
+			productRefGroup = 4D40826B17272C1700127D10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D40826917272C1700127D10 /* BlackMilkClothing */,
+				4D40828917272C1700127D10 /* BlackMilkClothingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D40826817272C1700127D10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D40827817272C1700127D10 /* InfoPlist.strings in Resources */,
+				4D40828017272C1700127D10 /* Default.png in Resources */,
+				4D40828217272C1700127D10 /* Default@2x.png in Resources */,
+				4D40828417272C1700127D10 /* Default-568h@2x.png in Resources */,
+				4DCD5F701729896D0017E6D9 /* MainScreenViewController.xib in Resources */,
+				4DCD5F751729A22D0017E6D9 /* CategoryListViewController.xib in Resources */,
+				4DCD5F7A1729BB710017E6D9 /* ProductListViewController.xib in Resources */,
+				4DCD5F7F1729BC750017E6D9 /* SectionListCell.xib in Resources */,
+				4DCD5F881729C9F00017E6D9 /* ProductListCell.xib in Resources */,
+				4D41A303172AFF9600AD4EAA /* ProductDetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D40828717272C1700127D10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D40829617272C1700127D10 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D40828817272C1700127D10 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D40826617272C1700127D10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D40827A17272C1700127D10 /* main.m in Sources */,
+				4D40827E17272C1700127D10 /* AppDelegate.m in Sources */,
+				4DCD5F64172984FF0017E6D9 /* TFHpple.m in Sources */,
+				4DCD5F65172984FF0017E6D9 /* TFHppleElement.m in Sources */,
+				4DCD5F66172984FF0017E6D9 /* XPathQuery.m in Sources */,
+				4DCD5F67172984FF0017E6D9 /* JASidePanelController.m in Sources */,
+				4DCD5F68172984FF0017E6D9 /* UIViewController+JASidePanel.m in Sources */,
+				4DCD5F69172984FF0017E6D9 /* Section.m in Sources */,
+				4DCD5F6F1729896D0017E6D9 /* MainScreenViewController.m in Sources */,
+				4DCD5F741729A22D0017E6D9 /* CategoryListViewController.m in Sources */,
+				4DCD5F791729BB710017E6D9 /* ProductListViewController.m in Sources */,
+				4DCD5F7D1729BC470017E6D9 /* SectionListCell.m in Sources */,
+				4DCD5F821729C2280017E6D9 /* Product.m in Sources */,
+				4DCD5F851729C9D90017E6D9 /* ProductListCell.m in Sources */,
+				4D41A302172AFF9600AD4EAA /* ProductDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D40828517272C1700127D10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D40829917272C1700127D10 /* BlackMilkClothingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D40829017272C1700127D10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D40826917272C1700127D10 /* BlackMilkClothing */;
+			targetProxy = 4D40828F17272C1700127D10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D40827617272C1700127D10 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D40827717272C1700127D10 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4D40829417272C1700127D10 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D40829517272C1700127D10 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D40829A17272C1700127D10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D40829B17272C1700127D10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D40829D17272C1700127D10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlackMilkClothing/BlackMilkClothing-Prefix.pch";
+				INFOPLIST_FILE = "BlackMilkClothing/BlackMilkClothing-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4D40829E17272C1700127D10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlackMilkClothing/BlackMilkClothing-Prefix.pch";
+				INFOPLIST_FILE = "BlackMilkClothing/BlackMilkClothing-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4D4082A017272C1700127D10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlackMilkClothing.app/BlackMilkClothing";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlackMilkClothing/BlackMilkClothing-Prefix.pch";
+				INFOPLIST_FILE = "BlackMilkClothingTests/BlackMilkClothingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		4D4082A117272C1700127D10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlackMilkClothing.app/BlackMilkClothing";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlackMilkClothing/BlackMilkClothing-Prefix.pch";
+				INFOPLIST_FILE = "BlackMilkClothingTests/BlackMilkClothingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D40826517272C1600127D10 /* Build configuration list for PBXProject "BlackMilkClothing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D40829A17272C1700127D10 /* Debug */,
+				4D40829B17272C1700127D10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D40829C17272C1700127D10 /* Build configuration list for PBXNativeTarget "BlackMilkClothing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D40829D17272C1700127D10 /* Debug */,
+				4D40829E17272C1700127D10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D40829F17272C1700127D10 /* Build configuration list for PBXNativeTarget "BlackMilkClothingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D4082A017272C1700127D10 /* Debug */,
+				4D4082A117272C1700127D10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D40826217272C1600127D10 /* Project object */;
+}
