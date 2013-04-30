@@ -42,6 +42,8 @@
 		4DCD5F821729C2280017E6D9 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD5F811729C2280017E6D9 /* Product.m */; };
 		4DCD5F851729C9D90017E6D9 /* ProductListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD5F841729C9D80017E6D9 /* ProductListCell.m */; };
 		4DCD5F881729C9F00017E6D9 /* ProductListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DCD5F871729C9F00017E6D9 /* ProductListCell.xib */; };
+		4DFBB3161730620300BE858C /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFBB3151730620300BE858C /* LoadingView.m */; };
+		4DFBB3181730621A00BE858C /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DFBB3171730621A00BE858C /* LoadingView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +110,9 @@
 		4DCD5F831729C9D80017E6D9 /* ProductListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListCell.h; sourceTree = "<group>"; };
 		4DCD5F841729C9D80017E6D9 /* ProductListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListCell.m; sourceTree = "<group>"; };
 		4DCD5F871729C9F00017E6D9 /* ProductListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProductListCell.xib; path = ../ProductListCell.xib; sourceTree = "<group>"; };
+		4DFBB3141730620300BE858C /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		4DFBB3151730620300BE858C /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		4DFBB3171730621A00BE858C /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +198,9 @@
 				4D41A2FF172AFF9500AD4EAA /* ProductDetailViewController.h */,
 				4D41A300172AFF9500AD4EAA /* ProductDetailViewController.m */,
 				4D41A301172AFF9600AD4EAA /* ProductDetailViewController.xib */,
+				4DFBB3141730620300BE858C /* LoadingView.h */,
+				4DFBB3151730620300BE858C /* LoadingView.m */,
+				4DFBB3171730621A00BE858C /* LoadingView.xib */,
 				4D40827417272C1700127D10 /* Supporting Files */,
 			);
 			path = BlackMilkClothing;
@@ -356,6 +364,7 @@
 				4DCD5F7F1729BC750017E6D9 /* SectionListCell.xib in Resources */,
 				4DCD5F881729C9F00017E6D9 /* ProductListCell.xib in Resources */,
 				4D41A303172AFF9600AD4EAA /* ProductDetailViewController.xib in Resources */,
+				4DFBB3181730621A00BE858C /* LoadingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +414,7 @@
 				4DCD5F821729C2280017E6D9 /* Product.m in Sources */,
 				4DCD5F851729C9D90017E6D9 /* ProductListCell.m in Sources */,
 				4D41A302172AFF9600AD4EAA /* ProductDetailViewController.m in Sources */,
+				4DFBB3161730620300BE858C /* LoadingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

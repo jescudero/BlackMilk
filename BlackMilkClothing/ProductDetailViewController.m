@@ -8,6 +8,7 @@
 
 #import "ProductDetailViewController.h"
 #import "TFHpple.h"
+#import "LoadingView.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface ProductDetailViewController (){
@@ -16,10 +17,11 @@
     UIActivityIndicatorView *activityIndicator;
     UIView *overlayView;
     BOOL isImageExpanded;
-    
+    LoadingView *loader;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *productTitle;
+@property (weak, nonatomic) IBOutlet UILabel *productPrice;
 @property (weak, nonatomic) IBOutlet UITextView *productDescription;
 @property (weak, nonatomic) IBOutlet UIButton *addToCartButton;
 @property (weak, nonatomic) IBOutlet UIScrollView* scrollView;
@@ -49,13 +51,8 @@
     [super viewDidLoad];
     self.navigationItem.title = @"BlackMilk";
 
-    activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    activityIndicator.alpha = 1.0;
-    activityIndicator.center = CGPointMake(160, 240);
-    activityIndicator.hidesWhenStopped = YES;
-    [self.view addSubview:activityIndicator];
-    [activityIndicator startAnimating];
-
+    loader = [LoadingView loadingViewWithParent:self.view];
+    [loader startAnimating];
 }
 
 
@@ -97,23 +94,28 @@
     self.productDescription.frame = newFrame;
                                
     self.productDescription.text = self.selectedProduct.description;
-    
-    self.addToCartButton.frame = CGRectMake(self.addToCartButton.frame.origin.x, self.productDescription.frame.origin.y + self.productDescription.frame.size.height + 25, self.addToCartButton.frame.size.width, self.addToCartButton.frame.size.height);
-   
-    [self.scrollViewContent setContentSize:CGSizeMake(320, self.addToCartButton.frame.origin.y + self
-                                                      .addToCartButton.frame.size.height + 25)];
-    
 
-    self.productDescription.layer.shadowColor = [[UIColor whiteColor] CGColor];
+    self.productDescription.layer.shadowColor = [[UIColor grayColor] CGColor];
     self.productDescription.layer.shadowOffset = CGSizeMake(2.0f, 2.0f);
     self.productDescription.layer.shadowOpacity = 1.0f;
     self.productDescription.layer.shadowRadius = 1.0f;
     self.productDescription.textColor  = [UIColor blackColor];
 
     //here is important!!!!
+
     self.productDescription.backgroundColor = [UIColor clearColor];
     
-    [activityIndicator stopAnimating];
+    self.productPrice.frame = CGRectMake(self.productPrice.frame.origin.x, self.productDescription.frame.origin.y + self.productDescription.frame.size.height + 25, self.productPrice.frame.size.width, self.productPrice.frame.size.height);
+    
+    self.productPrice.text = [NSString stringWithFormat:@"$ %@", self.selectedProduct.price];
+   
+    self.addToCartButton.frame = CGRectMake(self.addToCartButton.frame.origin.x, self.productPrice.frame.origin.y + self.productPrice.frame.size.height + 25, self.addToCartButton.frame.size.width, self.addToCartButton.frame.size.height);
+  
+    
+    [self.scrollViewContent setContentSize:CGSizeMake(320, self.addToCartButton.frame.origin.y + self
+                                                      .addToCartButton.frame.size.height + 25)];
+    
+    [loader stopAnimating];
 
 }
 
@@ -159,9 +161,9 @@
     
     self.selectedProduct.description = @"";
     
-    for (int i= 2; i < product_description.count ; i++)
+    for (int i= 3; i < product_description.count ; i++)
     {
-        self.selectedProduct.description = [NSString stringWithFormat:@"%@ %@", self.selectedProduct.description,  [[product_description objectAtIndex:i]  content]] ;
+        self.selectedProduct.description = [NSString stringWithFormat:@"%@ %@", self.selectedProduct.description,  (NSString *)[[product_description objectAtIndex:i]  content] ] ;
     }
     
     

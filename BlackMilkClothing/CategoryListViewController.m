@@ -13,10 +13,12 @@
 #import "Section.h"
 #import "SectionListCell.h"
 #import "ProductListViewController.h"
+#import "LoadingView.h"
 
 @interface CategoryListViewController ()
 {
         NSMutableArray *_objects;
+        LoadingView *loader;
 }
 @end
 
@@ -34,7 +36,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    loader = [LoadingView loadingViewWithParent:self.view];
+    [loader startAnimating];
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
     [self loadCategories];
+    [loader stopAnimating];
 }
 
 - (void)didReceiveMemoryWarning
@@ -83,6 +93,7 @@
     
     _objects = newCategories;
     [self.tableView reloadData];
+    [loader stopAnimating];
 }
 
 #pragma mark - Table view data source

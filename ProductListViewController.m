@@ -12,10 +12,12 @@
 #import "Product.h"
 #import "ProductListCell.h"
 #import "ProductDetailViewController.h"
+#import "LoadingView.h"
 
 @interface ProductListViewController ()
 {
-           NSMutableArray *_objects;
+    NSMutableArray *_objects;
+    LoadingView *loader;
 }
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
@@ -36,9 +38,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    loader = [LoadingView loadingViewWithParent:self.view];
+    [loader startAnimating];
+    
     self.navigationItem.title = self.selectedSection.title;
+}
 
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
     [self loadProducts];
+    
+    [loader stopAnimating];
 }
 
 - (void)didReceiveMemoryWarning
