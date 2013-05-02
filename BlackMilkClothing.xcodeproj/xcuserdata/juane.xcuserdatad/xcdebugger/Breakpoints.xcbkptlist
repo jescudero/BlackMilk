@@ -99,24 +99,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "BlackMilkClothing/ProductDetailViewController.m"
-         timestampString = "389047740.016921"
+         timestampString = "389223189.368363"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "200"
-         endingLineNumber = "200"
-         landmarkName = "-handleTap:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "BlackMilkClothing/ProductDetailViewController.m"
-         timestampString = "389047740.016921"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "198"
-         endingLineNumber = "198"
+         startingLineNumber = "207"
+         endingLineNumber = "207"
          landmarkName = "-handleTap:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -125,11 +112,37 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "BlackMilkClothing/ProductDetailViewController.m"
-         timestampString = "389047740.016921"
+         timestampString = "389223189.368363"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "204"
-         endingLineNumber = "204"
+         startingLineNumber = "205"
+         endingLineNumber = "205"
+         landmarkName = "-handleTap:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "BlackMilkClothing/ProductDetailViewController.m"
+         timestampString = "389223189.368363"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "211"
+         endingLineNumber = "211"
+         landmarkName = "-handleTap:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "BlackMilkClothing/ProductDetailViewController.m"
+         timestampString = "389223189.368363"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "209"
+         endingLineNumber = "209"
          landmarkName = "-handleTap:"
          landmarkType = "5">
       </FileBreakpoint>

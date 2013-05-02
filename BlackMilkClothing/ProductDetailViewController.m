@@ -62,15 +62,22 @@
     
     [self loadProduct];
     
+    //self.scrollView.frame = CGRectMake(0, 0, 150, 250);
+    
+    NSLog(NSStringFromCGRect(self.scrollView.frame));
+    
     for (int i = 0; i < self.selectedProduct.images.count; i++) {
         CGRect frame;
         frame.origin.x = self.scrollView.frame.size.width * i;
-        frame.origin.y = self.scrollView.frame.origin.y;
+        frame.origin.y = 0; //self.scrollView.frame.origin.y;
         frame.size = self.scrollView.frame.size;
         
         UIImageView *imageView = [[UIImageView alloc]initWithFrame:frame];
         UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.selectedProduct.images[i]]]];
         imageView.image = image;
+        
+        NSLog(NSStringFromCGRect(imageView.frame));
+
         
         NSLog(@"%@", NSStringFromCGSize(imageView.image.size));
         
@@ -203,26 +210,19 @@
         newImageView.frame = CGRectMake(0, 0, 320, 480);
         newImageView.gestureRecognizers = imageView.gestureRecognizers;
     
-        [UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionShowHideTransitionViews animations:^{
-            overlayView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
-            overlayView.backgroundColor = [UIColor colorWithWhite:0 alpha:.5];
-            [overlayView addSubview:newImageView];
         
-            [self.view.window addSubview:overlayView];
-
-        }completion:^(BOOL finished){
-            isImageExpanded = TRUE;
-        }];
-    }
-    else
-    {
-        [UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionShowHideTransitionViews animations:^{
-            [overlayView removeFromSuperview];
-    
-        }completion:^(BOOL finished){
-            isImageExpanded = FALSE;
-        }];
+        // first reduce the view to 1/100th of its original dimension
+        CGAffineTransform trans = CGAffineTransformScale(self.view.transform, 0.01, 0.01);
+        self.view.transform = trans;	// do it instantly, no animation
+        [self.view addSubview:newImageView];
+        // now return the view to normal dimension, animating this tranformation
+        [UIView animateWithDuration:0.5 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut
+                         animations:^{
+                             self.view.transform = CGAffineTransformScale(self.view.transform, 100.0, 100.0);
+                         }
+                         completion:nil];
     }
 }
+
 
 @end
